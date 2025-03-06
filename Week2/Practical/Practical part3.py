@@ -1,29 +1,37 @@
+#Task 2
 import turtle
-myTurtle = turtle.Turtle()
-myWindow = turtle.Screen()
-myWindow.setup(width=600, height=500)
-myWindow.bgcolor('blue')
-myTurtle.pensize(3)
-myTurtle.shape('turtle')
-myTurtle.color('white')
-myTurtle.penup()
-myTurtle.goto(50, 100)
-myTurtle.pendown()
-myTurtle.forward(50)
-myTurtle.right(90)
-myTurtle.forward(100) 
+import random
 
-#Task 1.1
-myTurtle.right(90)
-myTurtle.forward(50)
-myTurtle.right(90)
-myTurtle.forward(100)
-#Task 1.2
+class TurtleCluster:
+    def __init__(self):
+        self.cluster = []
+# Task 2.1
+    def addTurtle(self,turtle):
+         self.cluster.append(turtle)
+#Task 2.2
+    def goToLocation(self, x, y):
+        for turtle in self.cluster:
+            turtle.goto(x, y)
+#Task 2.3
+    def spreadOut(self):
+        for turtle in self.cluster:
+            bend = random.randint(1, 360)
+            distance = random.randint(1, 100)
+            turtle.right(bend)
+            turtle.forward(distance)
+#Task 2.4
+win = turtle.Screen()
+turtle1 = TurtleCluster()
+for _ in range(5):
+    tut = turtle.Turtle()
+turtle1.addTurtle(tut)
+turtle1.spreadOut()
+turtle1.goToLocation(0,0)
+turtle1.spreadOut()
+
+#Task 3
+
 terry=turtle.Turtle()
-#Task 1.3
-terry.pu()
-terry.goto(-300,0)
-terry.pd()
 terry.left(35)
 terry.color("red")
 terry.begin_fill()
@@ -68,5 +76,4 @@ terry.forward(30)
 terry.left(68)
 terry.circle(100, 180)
 terry.forward(165)
-myWindow.exitonclick()
-
+win.exitonclick()
