@@ -1,6 +1,3 @@
-
-
-
 server = Catalogue()
 sever.add.movie(
     Movie("The Matrix", ['Action', 'Sci-Fi'], 136, "M")
