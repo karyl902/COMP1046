@@ -39,7 +39,7 @@ class shell:
 class Bookcase:
     def __init__(self):
      return
-    def add(self, book: Book, shelf: Shelf):
+    def add(self, book: Book, shelf: int):
         return
     def remove(self, book: Book):
         return

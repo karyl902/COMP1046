@@ -1,0 +1,85 @@
+<diagram program="umletino" version="15.1"><zoom_level>7</zoom_level><element><id>UMLClass</id><coordinates><x>343</x><y>273</y><w>147</w><h>77</h></coordinates><panel_attributes>ATM
+--
+location: string
+--
+display()
+withdraw()
+deposit()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>630</x><y>273</y><w>147</w><h>133</h></coordinates><panel_attributes>SavingAccount
+--
+number: integer
+owner: string
+balance: long
+--
+makeWithdrawal()
+makeDeposit()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>483</x><y>308</y><w>161</w><h>35</h></coordinates><panel_attributes>lt=-
+m1=0..*
+m2=0..*
+display &gt;</panel_attributes><additional_attributes>10;20;210;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>868</x><y>259</y><w>147</w><h>133</h></coordinates><panel_attributes>Branch
+--
+name: string
+branchNumber: long
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>770</x><y>315</y><w>112</w><h>35</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=0..*
+affiliatedWith &gt;</panel_attributes><additional_attributes>140;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>630</x><y>469</y><w>147</w><h>133</h></coordinates><panel_attributes>Record
+--
+id: integer
+timestamp: datetime
+amount: integer
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>700</x><y>399</y><w>70</w><h>84</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=0..*
+hasHistory &gt;</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>UMLClass</id><coordinates><x>861</x><y>490</y><w>147</w><h>49</h></coordinates><panel_attributes>Bank
+--
+name:string
+headquarterLocation:string
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>931</x><y>385</y><w>56</w><h>119</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=1
+m2=..*
+consist of
+</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>UMLClass</id><coordinates><x>343</x><y>427</y><w>147</w><h>49</h></coordinates><panel_attributes>WirelessSensor
+--
+id:integer
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>406</x><y>343</y><w>35</w><h>98</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+has</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>UMLClass</id><coordinates><x>868</x><y>105</y><w>147</w><h>77</h></coordinates><panel_attributes>StreetATM
+--
+transactionLimit:5000</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>938</x><y>175</y><w>70</w><h>98</h></coordinates><panel_attributes>lt=-
+m1=..*
+m2=0
+operated By</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>378</y><w>147</w><h>133</h></coordinates><panel_attributes>Restaurant
+--
+name:string
+location:string
+peopleLimit:int
+tableCount:int
+--
+queryPeopleLiimit()
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>406</x><y>105</y><w>476</w><h>182</h></coordinates><panel_attributes>lt=&lt;&lt;-
+</panel_attributes><additional_attributes>10;240;10;20;660;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>7</x><y>266</y><w>147</w><h>49</h></coordinates><panel_attributes>RestaurantATM
+--
+transactionLimit:500</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>147</x><y>273</y><w>210</w><h>28</h></coordinates><panel_attributes>lt=&lt;&lt;-
+</panel_attributes><additional_attributes>280;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>63</x><y>308</y><w>63</w><h>84</h></coordinates><panel_attributes>lt=-
+m1=0
+m2=2
+installed in</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>140</x><y>119</y><w>91</w><h>35</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=0
+installed in</panel_attributes><additional_attributes>10;20;110;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>70</y><w>147</w><h>133</h></coordinates><panel_attributes>Pub
+--
+name:string
+location:string
+peopleLimit:int
+pokieMachines:int
+--
+queryPeopleLiimit()
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>217</x><y>105</y><w>147</w><h>49</h></coordinates><panel_attributes>PubATM
+--
+transactionLimit:250</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>343</x><y>147</y><w>21</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;-
+</panel_attributes><additional_attributes>10;180;10;10</additional_attributes></element></diagram>
