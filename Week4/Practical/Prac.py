@@ -88,7 +88,7 @@ ada.receivePay()
 print("$" + str(ada.getMoney()))
 ada.die()
 #Task3 test
-bill = Programmer('Bill', 25, 1000, 50)
+bill = Programmer('Monkey', 25, 1000, 50)
 bill.work(3)
 bill.receivePay()
 print("$",str(bill.getMoney()))
