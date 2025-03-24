@@ -1,5 +1,8 @@
-from book import Book
-
+class Book:
+    def __init__(self, title: str, author, date: str):
+        self.title = title
+        self.author = author  
+        self.date = date
 class Library:
      def __init__(self):
          self.books = []
