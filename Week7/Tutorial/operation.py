@@ -9,7 +9,7 @@ class operation:
         self.first = first
         self.operator = operator
         self.second = second
-        self.__calculator()
+        self.answer = self.__calculate()
         pass
 
     def __str__(self) -> str:
@@ -20,9 +20,23 @@ class operation:
             "=",
             str(self.result)
         ]
-        pass
+        return 
+    def __operations(self):
+        operations = {
+            "+": self.__add,
+            "-": self.__subtract,
+            "x": self.__multiply,
+            "/": self.__divide
+        }
+        return operations
     def __calculate(self):
-        return
+        operator = self.operator
+        try:
+            operations = self.__operations
+            operations[operator]()
+            pass
+        except Exception as e:
+            return e
     pass
 
     def __multiply(self):
@@ -49,5 +63,35 @@ class operation:
         return self.__first
     @property
     def second(self):
-        return
-    pass
+        return self.__second
+    @property
+    def operator(self):
+        return self.__operator
+    @property
+    def result(self):
+        return self.__answer
+    @first.setter
+    def second(self, first):
+        try:
+            self.__first = self.__convert_str_to_num(first)
+        except Exception as e:
+            raise e
+    @second.setter
+    def second(self, second):
+        try:
+            self.__second = self.__convert_str_to_num(second)
+        except Exception as e:
+            raise e
+    @operator.setter
+    def operator(self,operator):
+        try:
+            self.__operator = self.__convert_str_to_num(operator)
+            pass
+        except Exception as e:
+            raise e
+    @answer.setter
+    def answer(self,answer):
+        try:
+            self.__answer = self.__convert_str_to_num(answer)
+        except Exception as e:
+            raise e
