@@ -1,4 +1,4 @@
-<diagram program="umletino" version="15.1"><zoom_level>7</zoom_level><element><id>UMLClass</id><coordinates><x>252</x><y>70</y><w>217</w><h>168</h></coordinates><panel_attributes>Grader
+<diagram program="umletino" version="15.1"><zoom_level>9</zoom_level><element><id>UMLClass</id><coordinates><x>82</x><y>36</y><w>279</w><h>216</h></coordinates><panel_attributes>Grader
 
 --
 - student_graders: dict 
@@ -13,7 +13,7 @@
 --Manage assignment registration 
 and student assignment grading process
 --Tracking student assignment submission records 
-and grading results</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>616</x><y>357</y><w>273</w><h>112</h></coordinates><panel_attributes>Assignment
+and grading results</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>550</x><y>405</y><w>351</w><h>144</h></coordinates><panel_attributes>Assignment
 --
 # student: str 
 --
@@ -23,7 +23,7 @@ and grading results</panel_attributes><additional_attributes></additional_attrib
 --Defines an abstract specification for the job class, forcing 
 subclasses to implement the course content and code review logic
 --Provides a uniform interface for specific job classes 
-(such as Statistics, IntroToPython)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>231</x><y>343</y><w>273</w><h>140</h></coordinates><panel_attributes>AssignmentGrader
+(such as Statistics, IntroToPython)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>55</x><y>387</y><w>351</w><h>180</h></coordinates><panel_attributes>AssignmentGrader
 --
 - assignment: Assignment       
 - attempts: int          
@@ -36,7 +36,7 @@ subclasses to implement the course content and code review logic
 --Encapsulate the grading logic of individual student assignments 
 and manage submission records
 -- Record the number of students' homework submission, 
-and count the correct submission results</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>644</x><y>182</y><w>210</w><h>91</h></coordinates><panel_attributes>IntroToPython
+and count the correct submission results</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>586</x><y>180</y><w>270</w><h>117</h></coordinates><panel_attributes>IntroToPython
 --
 + lesson(): str         
 + check(code: str): bool
@@ -44,7 +44,7 @@ and count the correct submission results</panel_attributes><additional_attribute
 -- Provides a description of the content of 
 the introductory Python course
 -- Check the correctness of basic Python tasks
- (such as variable definitions and syntax formatting)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>623</x><y>546</y><w>266</w><h>105</h></coordinates><panel_attributes>Statistics
+ (such as variable definitions and syntax formatting)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>559</x><y>648</y><w>342</w><h>135</h></coordinates><panel_attributes>Statistics
 --
 + lesson(): str            
 + check(code: str): bool 
@@ -52,12 +52,12 @@ the introductory Python course
 -- To realize the output of course content 
 of statistics subjects
 -- Performs logical checks on the code of the statistics-related job 
-(e.g. whether the calculation logic is correct)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>742</x><y>462</y><w>49</w><h>98</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
-inherit</panel_attributes><additional_attributes>10;120;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>735</x><y>266</y><w>49</w><h>105</h></coordinates><panel_attributes>lt=&lt;&lt;.
-realize</panel_attributes><additional_attributes>10;10;10;130</additional_attributes></element><element><id>Relation</id><coordinates><x>497</x><y>399</y><w>133</w><h>35</h></coordinates><panel_attributes>lt=&lt;-
+(e.g. whether the calculation logic is correct)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>712</x><y>540</y><w>63</w><h>126</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+inherit</panel_attributes><additional_attributes>10;120;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>703</x><y>288</y><w>63</w><h>135</h></coordinates><panel_attributes>lt=&lt;&lt;.
+realize</panel_attributes><additional_attributes>10;10;10;130</additional_attributes></element><element><id>Relation</id><coordinates><x>397</x><y>459</y><w>171</w><h>45</h></coordinates><panel_attributes>lt=&lt;-
 m1=1
 m2=1
-relevance</panel_attributes><additional_attributes>170;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>350</x><y>231</y><w>56</w><h>126</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+relevance</panel_attributes><additional_attributes>170;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>208</x><y>243</y><w>72</w><h>162</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m1=*
 m2=1
 assembly</panel_attributes><additional_attributes>10;10;10;160</additional_attributes></element></diagram>
