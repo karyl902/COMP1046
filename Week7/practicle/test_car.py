@@ -1,3 +1,8 @@
+#Academix Integrity statement
+#Name: Zhenyi He
+#Student ID: 521332
+#Email: 521332@learning.eynesbury.edu.au
+#This program is my own work as defined by the Academic Integrity
 from car import Car
 # Task 3.2
 car1 = Car(250)
