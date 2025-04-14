@@ -16,7 +16,7 @@ class TestConverter(unittest.TestCase):
     def test_celsius_to_fahrenheit(self):
         self.assertEqual(c_to_f(0), 32)
         self.assertEqual(c_to_f(100), 212)
-        self.assertEqual(c_to_f(-0.5555555555), 31.0)
+        self.assertAlmostEqual(c_to_f(-0.5555555555), 31.0)
         self.assertRaises(TypeError, c_to_f, "freezing")
 
 unittest.main()
