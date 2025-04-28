@@ -1,0 +1,9 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>250</x><y>50</y><w>210</w><h>190</h></coordinates><panel_attributes>Car
+--
+car_make: str
+car_model: str
+car_year: int
+car_colour: str
+car_rego: str
+--
+</panel_attributes><additional_attributes></additional_attributes></element></diagram>

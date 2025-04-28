@@ -273,6 +273,38 @@ for key, value in year_dict.items():
     print()
     pass
 
+class Car:
+    def __init__(self, make, model, year, colour, rego):
+        self._make = make
+        self._model = model
+        self._year = year
+        self._colour = colour
+        self._rego = rego
+
+    @property
+    def make(self):
+        return self._make
+
+    @property
+    def model(self):
+        return self._model
+
+    @property
+    def year(self):
+        return self._year
+
+    @property
+    def colour(self):
+        return self._colour
+
+    @property
+    def rego(self):
+        return self._rego
+
+    def __str__(self):
+        return "Make: " + str(self._make) + ", Model: " + str(self._model) + ", Year: " + str(self._year) + ", Colour: " + str(self._colour) + ", Rego: " + str(self._rego)
+
+
 #HOMEWORK
 #make a car class
 #make a version of this file using car objects instead of tuples and dictionaries
