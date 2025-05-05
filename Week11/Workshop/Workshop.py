@@ -1,3 +1,8 @@
+#Academix Integrity statement
+#Name: Zhenyi He
+#Student ID: 521332
+#Email: 521332@learning.eynesbury.edu.au
+#This program is my own work as defined by the Academic Integrity
 import hashlib 
 class User: 
     def __init__(self, username, password): 
@@ -75,7 +80,7 @@ class Authenticator:
 # Task 6
 if __name__ == "__main__":
     auth = Authenticator()
-    
+
     # Test Case 1
     try:
         auth.add_user("johnny", "johnnypassword")
